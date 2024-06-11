@@ -28,6 +28,7 @@ public class StudentController {
 
     @GetMapping("/")
     public String getStudentList(Model model) {
+        System.out.println("komsl");
         model.addAttribute("students", studentService.getAllData());
         return "studentList";
     }
